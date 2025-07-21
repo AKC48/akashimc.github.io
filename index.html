@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>明石医院 – 藤沢市湘南台に40年、信頼の2世代ワンストップ体制</title>
   <style>
     body{margin:0;padding:0;font-family:'Meiryo',sans-serif;line-height:1.6;color:#333;background:#fff}
     header{background:#0066cc;color:#fff;text-align:center;position:relative;padding:50px 16px 32px}
     .header-bar{position:absolute;top:14px;left:0;right:0;max-width:960px;margin:auto;display:flex;justify-content:center;gap:12px;pointer-events:none}
-    .location,.director{background:rgba(255,255,255,0.8);padding:4px 12px;font-size:.85em;border-radius:12px;color:#0066cc;font-weight:bold;pointer-events:auto;margin:0}
+    .location,.director{background:rgba(255,255,255,0.8);padding:4px 12px;font-size:.85em;border-radius:12px;color:#0066cc;font-weight:bold;pointer-events:auto;margin:0;white-space:nowrap}
     .header-main{margin-top:8px;display:flex;align-items:center;justify-content:center;gap:8px}
     h1{margin:0;font-size:2.4em;color:#fff;letter-spacing:.06em;line-height:1.1}
-    .header-logo{width:32px;height:32px;background:#000;border-radius:50%;padding:2px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+    .header-logo{width:55px;height:55px;background:#000;border-radius:50%;padding:2px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
     .subtitle{margin-top:12px;font-size:.95em;color:#eef5fc}
     .container{max-width:960px;margin:0 auto;padding:20px}
-    .nav-buttons{display:flex;gap:16px;justify-content:center;margin:36px 0 12px;flex-wrap:wrap}
+    .nav-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:36px 0 12px}
     .nav-button{flex:1 1 180px;padding:12px 0;background:#0066cc;color:#fff;text-decoration:none;border-radius:20px;font-weight:bold;font-size:1em;text-align:center;box-shadow:0 3px 6px rgba(0,0,0,.1)}
     .nav-button .btn-note{display:block;margin-top:4px;font-size:.75em;opacity:.8}
     .nav-button:hover{background:#0052a3}
-    .nav-button.contact i{color:#e60023}
+    .nav-button.contact{color:#fff}
     section{padding:40px 0;border-top:1px solid #ddd}
     h2{margin:0 0 16px;font-size:1.3em;color:#0066cc;border-bottom:2px solid #0066cc;padding-bottom:6px}
     ul{margin:0;padding-left:1.2em}
@@ -31,16 +31,15 @@
     .map-container{position:relative;width:100%;padding-bottom:56.25%;margin-top:20px;border-radius:15px;overflow:hidden}
     .map-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
     footer{text-align:center;background:#f4f4f4;padding:20px;font-size:.85em}
-    @media(max-width:800px){.nav-buttons{flex-wrap:wrap}}
     @media(max-width:600px){
       header{padding:48px 8px 24px}
-      .header-bar{flex-wrap:wrap;gap:6px;position:static}
-      .location,.director{font-size:1em;margin:0}
+      .header-bar{position:static;flex-wrap:wrap;gap:6px}
+      .location,.director{width:45%;font-size:1em;margin:0}
       .header-main{flex-direction:column;gap:6px;margin-top:8px}
       h1{font-size:2em}
-      .header-logo{width:34px;height:34px}
+      .header-logo{width:45px;height:45px}
       .subtitle{font-size:.9em}
-      .nav-buttons{grid-template-columns:repeat(2,1fr);gap:12px}
+      .nav-buttons{gap:12px}
       .nav-button{font-size:.95em;padding:10px 0}
       .schedule-table th,.schedule-table td{padding:6px;font-size:.9em}
     }
@@ -57,10 +56,7 @@
       <h1>明石医院</h1>
       <img src="image (3).png" class="header-logo" alt="明石医院ロゴ">
     </div>
-    <p class="subtitle">
-      <strong>湘南台に40年、信頼の2世代ワンストップ体制</strong><br>
-      お子さまからご高齢の方まで、笑顔でサポートします
-    </p>
+    <p class="subtitle"><strong>藤沢市湘南台に40年、信頼の2世代ワンストップ体制</strong><br>お子さまからご高齢の方まで、笑顔でサポートします</p>
   </header>
 
   <div class="container">
@@ -70,9 +66,8 @@
       </a>
       <a class="nav-button" href="#features">当院の特徴</a>
       <a class="nav-button" href="#access">アクセス</a>
-      <a class="nav-button contact" href="#contact"><i>📞</i>お問い合わせ</a>
+      <a class="nav-button contact" href="#contact">📞 お問い合わせ</a>
     </div>
-    <!-- 写真 2点 -->
     <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;">
       <img src="23BA44BA-A133-40EF-BD70-B67D32AFD54C.jpg" style="width:120px;height:120px;border-radius:50%;object-fit:cover;">
       <img src="99C0BB78-9B50-4A79-BF9F-BBFF2DE82B23.jpg" style="width:120px;height:120px;border-radius:50%;object-fit:cover;">
@@ -119,8 +114,8 @@
     <section id="access">
       <h2>アクセス</h2>
       <ul>
-        <li>〒252-0804　神奈川県藤沢市湘南台7-15-14</li>
-        <li>電車：「湘南台駅」東口(Ｈ) 徒歩約5分</li>
+        <li>〒252-0804</li>
+        <li>神奈川県藤沢市湘南台7-15-14</li>
         <li>駐車場無料:4台＋6台(第二駐車場)</li>
       </ul>
       <div class="map-container">
