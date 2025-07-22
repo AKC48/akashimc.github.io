@@ -2,51 +2,200 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>明石医院 – 湘南台に40年、信頼の2世代ワンストップ体制</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>明石医院 – 藤沢市湘南台に40年 信頼の2世代ワンストップ体制</title>
   <style>
-    body{margin:0;padding:0;font-family:'Meiryo',sans-serif;line-height:1.6;color:#333;background:#fff}
-    header{background:#0066cc;color:#fff;text-align:center;position:relative;padding:50px 16px 32px}
-    .header-bar{position:absolute;top:14px;left:0;right:0;max-width:960px;margin:auto;display:flex;justify-content:center;gap:12px;pointer-events:none}
-    .location,.director{background:rgba(255,255,255,0.8);padding:4px 12px;font-size:.85em;border-radius:12px;color:#0066cc;font-weight:bold;pointer-events:auto;white-space:nowrap;margin:0}
-    .header-main{margin-top:8px;display:flex;align-items:center;justify-content:center;gap:8px}
-    h1{margin:0;font-size:2.4em;color:#fff;letter-spacing:.06em;line-height:1.1}
-    .header-logo{width:32px;height:32px;background:#000;border-radius:50%;padding:2px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
-    .subtitle{margin-top:12px;font-size:.95em;color:#eef5fc}
-    .container{max-width:960px;margin:0 auto;padding:20px}
-    .nav-buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:36px 0 12px}
-    .nav-button{padding:12px 0;background:#0066cc;color:#fff;text-decoration:none;border-radius:20px;font-weight:bold;font-size:1em;text-align:center;box-shadow:0 3px 6px rgba(0,0,0,.1)}
-    .nav-button .btn-note{display:block;margin-top:4px;font-size:.75em;opacity:.8}
-    .nav-button:hover{background:#0052a3}
-    .nav-button.contact{color:#fff}
-    .photo-row{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;margin:34px 0}
-    .photo-item{flex:1;max-width:300px;text-align:center}
-    .photo-item img{width:200px;height:200px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 6px 12px rgba(0,0,0,0.15)}
-    section{padding:40px 0;border-top:1px solid #ddd}
-    h2{margin:0 0 16px;font-size:1.3em;color:#0066cc;border-bottom:2px solid #0066cc;padding-bottom:6px}
-    ul{padding-left:1.2em;margin:0}
-    ul li{margin-bottom:8px}
-    .schedule-table{width:100%;border-collapse:collapse;margin-top:20px}
-    .schedule-table th,.schedule-table td{padding:8px;border:1px solid #ccc;text-align:center}
-    .schedule-table th{background:#e4f2fb;color:#0066cc}
-    .contact-info{background:#f1f5f9;padding:20px;border-radius:12px}
-    .contact-info a{text-decoration:underline;color:#0066cc}
-    .map-container{position:relative;width:100%;padding-bottom:56.25%;margin-top:20px;border-radius:15px;overflow:hidden}
-    .map-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-    footer{text-align:center;background:#f4f4f4;padding:20px;font-size:.85em}
-    @media(max-width:800px){.nav-buttons{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:600px){
-      header{padding:48px 8px 24px}
-      .header-bar{flex-wrap:wrap;gap:6px;position:static}
-      .location,.director{width:45%;font-size:.85em;margin:0}
-      .header-main{flex-direction:column;gap:6px;margin-top:8px}
-      h1{font-size:2em}
-      .header-logo{width:34px;height:34px}
-      .subtitle{font-size:.9em}
-      .nav-buttons{grid-template-columns:repeat(2,1fr);gap:12px}
-      .nav-button{font-size:.95em;padding:10px 0}
-      .photo-item img{width:120px;height:120px}
-      .schedule-table th,.schedule-table td{padding:6px;font-size:.9em}
+    body {
+      font-family: 'Meiryo', sans-serif;
+      margin: 0; padding: 0;
+      color: #333; background: #fff; line-height: 1.6;
+    }
+    header {
+      background: #0066cc; color: #fff;
+      text-align: center;
+      position: relative;
+      padding: 50px 16px 32px;
+    }
+    .header-bar {
+      display: flex; justify-content: center; gap: 12px;
+      position: absolute; top: 14px; left: 0; right: 0;
+      max-width: 960px; margin: auto; pointer-events: none;
+    }
+    .location, .director {
+      background: rgba(255,255,255,0.8);
+      padding: 4px 12px; font-size: 0.85em;
+      border-radius: 12px;
+      color: #0066cc; font-weight: bold;
+      pointer-events: auto; white-space: nowrap;
+    }
+    .header-main {
+      margin-top: 8px;
+      display: flex; align-items: center; justify-content: center;
+      gap: 10px;
+    }
+    h1 {
+      margin: 0; font-size: 2.6em;
+      color: #fff; letter-spacing: 0.06em;
+    }
+    .header-logo {
+      width: 42px; height: 42px;
+      background: #000; border-radius: 50%;
+      padding: 2px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    }
+    .subtitle {
+      margin-top: 12px;
+      font-size: 0.95em;
+      color: #eef5fc;
+    }
+
+    .container {
+      max-width: 960px; margin: 0 auto; padding: 20px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin: 36px 0 12px;
+    }
+    .nav-button {
+      flex: 0 1 200px;
+      padding: 12px 0;
+      background: #0066cc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 1em;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .nav-button .btn-note {
+      display: block;
+      margin-top: 4px;
+      font-size: 0.75em;
+      opacity: 0.8;
+    }
+    .photo-row {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 28px 0 0;
+    }
+    .photo-item img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      filter: brightness(1.2);
+    }
+
+    section {
+      padding: 40px 0;
+      border-top: 1px solid #ddd;
+    }
+
+    h2 {
+      color: #0066cc;
+      font-size: 1.3em;
+      border-bottom: 2px solid #0066cc;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    .schedule-table th,
+    .schedule-table td {
+      padding: 8px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    .schedule-table th {
+      background: #e4f2fb;
+      color: #0066cc;
+    }
+
+    .contact-info {
+      background: #f1f5f9;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .contact-info a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    .map-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 15px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    .map-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85em;
+    }
+
+    @media (max-width: 600px) {
+      .header-bar {
+        flex-wrap: wrap;
+        gap: 6px;
+        position: static;
+      }
+      .location, .director {
+        font-size: 0.95em;
+        margin: 0;
+        width: auto;
+      }
+      .header-main {
+        flex-direction: column;
+        gap: 6px;
+        margin-top: 8px;
+      }
+      h1 { font-size: 2em; }
+      .header-logo { width: 36px; height: 36px; }
+      .subtitle { font-size: 0.9em; }
+      .nav-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .photo-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .photo-item img {
+        width: 120px;
+        height: 120px;
+      }
     }
   </style>
 </head>
@@ -59,20 +208,18 @@
     </div>
     <div class="header-main">
       <h1>明石医院</h1>
-      <img src="image (3).png" class="header-logo" alt="明石医院ロゴ">
+      <img src="image (3).png" class="header-logo" alt="明石医院ロゴ" />
     </div>
     <p class="subtitle">
-      <strong>湘南台に40年、信頼の2世代ワンストップ体制</strong><br>
+      <strong>藤沢市湘南台に40年、信頼の2世代ワンストップ体制</strong><br>
       お子さまからご高齢の方まで、笑顔でサポートします
     </p>
   </header>
 
   <div class="container">
-
     <div class="nav-buttons">
       <a class="nav-button" href="https://patient.digikar-smart.jp/institutions/88d075d5-95ea-4a91-9e20-0c7435d8bfa6/reserve?hl=ja" target="_blank">
-        ご予約はこちら<br>
-        <span class="btn-note">※現金のみ、必須を入力</span>
+        ご予約はこちら<br><span class="btn-note">※現金のみ、必須を入力</span>
       </a>
       <a class="nav-button" href="#features">当院の特徴</a>
       <a class="nav-button" href="#access">アクセス</a>
@@ -81,10 +228,10 @@
 
     <div class="photo-row">
       <div class="photo-item">
-        <img src="F5FA8B73-A9ED-4CB1-B09F-C409B6395073.jpg" alt="">
+        <img src="F5FA8B73-A9ED-4CB1-B09F-C409B6395073.jpg" alt="外観">
       </div>
       <div class="photo-item">
-        <img src="99C0BB78-9B50-4A79-BF9F-BBFF2DE82B23.jpg" alt="">
+        <img src="99C0BB78-9B50-4A79-BF9F-BBFF2DE82B23.jpg" alt="院長・院長補佐">
       </div>
     </div>
 
@@ -111,16 +258,14 @@
     <section id="schedule">
       <h2>診療時間・受診案内</h2>
       <table class="schedule-table">
-        <thead>
-          <tr><th>曜日</th><th>午前診療</th><th>午後診療</th></tr>
-        </thead>
+        <thead><tr><th>曜日</th><th>午前診療</th><th>午後診療</th></tr></thead>
         <tbody>
           <tr><td>月〜金</td><td>9:00～12:00</td><td>15:00～19:00</td></tr>
           <tr><td>土曜日</td><td>9:00～12:00</td><td>休診</td></tr>
           <tr><td>日・祝</td><td colspan="2">休診</td></tr>
         </tbody>
       </table>
-      <ul style="margin-top:10px;font-size:.9em">
+      <ul style="margin-top:10px;font-size:.9em;">
         <li>※受付は診察終了30分前まで</li>
         <li>※急患対応は随時承ります</li>
       </ul>
@@ -129,12 +274,12 @@
     <section id="access">
       <h2>アクセス</h2>
       <ul>
-        <li>〒252-0804 神奈川県藤沢市湘南台7-15-14</li>
+        <li>〒252-0804　神奈川県藤沢市湘南台7-15-14</li>
         <li>電車：「湘南台駅」東口(Ｈ) 徒歩約5分</li>
         <li>駐車場無料:4台＋6台(第二駐車場)</li>
       </ul>
       <div class="map-container">
-        <iframe src="https://www.google.com/maps?q=明石医院 湘南台&output=embed" allowfullscreen loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps?q=明石医院+湘南台&output=embed" allowfullscreen loading="lazy"></iframe>
       </div>
     </section>
 
@@ -153,6 +298,8 @@
     </section>
   </div>
 
-  <footer>©2025 明石医院 All Rights Reserved.</footer>
+  <footer>
+    ©2025 明石医院 All Rights Reserved.
+  </footer>
 </body>
 </html>
