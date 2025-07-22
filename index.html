@@ -19,27 +19,27 @@
     .header-bar {
       display: flex; justify-content: center; gap: 12px;
       position: absolute; top: 14px; left: 0; right: 0;
-      max-width: 960px; margin: auto;
+      max-width: 960px; margin: auto; pointer-events: none;
     }
     .location, .director {
       background: rgba(255,255,255,0.8);
       padding: 4px 12px; font-size: 0.85em;
       border-radius: 12px;
       color: #0066cc; font-weight: bold;
-      white-space: nowrap;
+      pointer-events: auto; white-space: nowrap;
     }
     .header-main {
       margin-top: 8px;
       display: flex; align-items: center; justify-content: center;
-      gap: 8px;
+      gap: 10px;
     }
     h1 {
       margin: 0; font-size: 2.6em;
       color: #fff; letter-spacing: 0.06em;
     }
     .header-logo {
-      width: 130px;
-      height: 130px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       padding: 2px;
       background: #000;
@@ -47,9 +47,10 @@
     }
     .subtitle {
       margin-top: 12px;
-      font-size: 15px;
-      max-width: 280px;
-      margin-left: auto; margin-right: auto;
+      font-size: 16px;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
       color: #eef5fc;
       line-height: 1.4;
       letter-spacing: -0.02em;
@@ -85,70 +86,97 @@
       opacity: 0.8;
     }
     .photo-row {
-      display: flex; justify-content: center; flex-wrap: wrap;
-      gap: 32px; margin: 28px 0 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 32px;
+      margin: 28px 0 0;
     }
     .photo-item img {
-      width: 150px; height: 150px;
-      object-fit: cover; border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       filter: brightness(1.2);
     }
     section {
-      padding: 40px 0; border-top: 1px solid #ddd;
+      padding: 40px 0;
+      border-top: 1px solid #ddd;
     }
     h2 {
-      color: #0066cc; font-size: 1.3em;
+      color: #0066cc;
+      font-size: 1.3em;
       border-bottom: 2px solid #0066cc;
-      padding-bottom: 6px; margin-bottom: 16px;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
     }
     ul {
-      list-style-type: disc; list-style-position: inside;
+      list-style-type: disc;
+      list-style-position: inside;
       padding-left: 1.2em;
     }
     ul li {
-      margin-bottom: 8px; font-size: 1em;
-    }
-    /* 特徴リスト先頭マーカーを統一 */
-    .features-list { margin: 0; padding: 0; }
-    .features-list li {
-      list-style-type: disc; list-style-position: inside;
       margin-bottom: 8px;
+      font-size: 1em;
     }
     .schedule-table {
-      width: 100%; border-collapse: collapse; margin-top: 20px;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
     }
-    .schedule-table th, .schedule-table td {
-      padding: 8px; border: 1px solid #ccc; text-align: center;
+    .schedule-table th,
+    .schedule-table td {
+      padding: 8px;
+      border: 1px solid #ccc;
+      text-align: center;
     }
     .schedule-table th {
-      background: #e4f2fb; color: #0066cc;
+      background: #e4f2fb;
+      color: #0066cc;
     }
     .map-container {
-      position: relative; width: 100%; padding-bottom: 56.25%;
-      height: 0; border-radius: 15px; overflow: hidden; margin-top: 20px;
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 15px;
+      overflow: hidden;
+      margin-top: 20px;
     }
     .map-container iframe {
-      position: absolute; top: 0; left: 0;
-      width: 100%; height: 100%; border: 0;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
     .contact-info {
-      background: #f1f5f9; padding: 20px; border-radius: 12px;
+      background: #f1f5f9;
+      padding: 20px;
+      border-radius: 12px;
     }
     .contact-info a {
-      color: #0066cc; text-decoration: underline;
+      color: #0066cc;
+      text-decoration: underline;
     }
     footer {
-      background: #f4f4f4; text-align: center;
-      padding: 20px; font-size: 0.85em;
+      background: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85em;
     }
     @media (max-width: 600px) {
       .subtitle {
-        font-size: 13px; max-width: 96vw;
-        -webkit-line-clamp: unset; display: block; height: auto;
+        font-size: 14px;
+        max-width: 96vw;
+        -webkit-line-clamp: unset;
+        display: block;
+        height: auto;
       }
       .header-logo {
-        width: 100px; height: 100px;
+        width: 120px;
+        height: 120px;
       }
     }
   </style>
@@ -171,17 +199,26 @@
 
   <div class="container">
     <div class="nav-buttons">
+      <a class="nav-button" href="https://patient.digikar-smart.jp/institutions/88d075d5-95ea-4a91-9e20-0c7435d8bfa6/reserve?hl=ja" target="_blank">
+        ご予約はこちら<br><span class="btn-note">※現金のみ、必須を入力</span>
+      </a>
       <a class="nav-button" href="#features">当院の特徴</a>
       <a class="nav-button" href="#access">アクセス</a>
       <a class="nav-button contact" href="#contact">📞 お問い合わせ</a>
-      <a class="nav-button" href="https://patient.digikar-smart.jp..." target="_blank">
-        ご予約はこちら<br><span class="btn-note">※現金のみ</span>
-      </a>
+    </div>
+
+    <div class="photo-row">
+      <div class="photo-item">
+        <img src="23BA44BA-A133-40EF-BD70-B67D32AFD54C.webp" alt="外観" loading="lazy" />
+      </div>
+      <div class="photo-item">
+        <img src="99C0BB78-9B50-4A79-BF9F-BBFF2DE82B23.webp" alt="院長・院長補佐" loading="lazy" />
+      </div>
     </div>
 
     <section id="features">
       <h2>当院の特徴</h2>
-      <ul class="features-list">
+      <ul>
         <li>外科・内科、心臓血管外科を中心に幅広く診察。</li>
         <li>地域密着の<strong>信頼と歴史</strong></li>
         <li>最新医療技術を取り入れた<strong>2世代体制</strong></li>
@@ -190,8 +227,62 @@
       </ul>
     </section>
 
-    <!-- 以下省略（前回と同じ構成） -->
+    <section id="dx">
+      <h2>当院の医療DX推進体制</h2>
+      <ul>
+        <li>マイナンバーカードを活用したオンライン資格確認を導入</li>
+        <li>薬剤・受診歴・健診情報等を電子的に取得し診療に活用</li>
+        <li>電子処方箋発行・電子カルテ情報共有サービスを準備中</li>
+      </ul>
+      <p>これらの取り組みを通じ、またAIを活用することにより安全かつ高品質な医療を提供します。</p>
+    </section>
 
+    <section id="schedule">
+      <h2>診療時間・受診案内</h2>
+      <table class="schedule-table">
+        <thead><tr><th>曜日</th><th>午前診療</th><th>午後診療</th></tr></thead>
+        <tbody>
+          <tr><td>月〜金</td><td>9:00～12:00</td><td>15:00～19:00</td></tr>
+          <tr><td>土曜日</td><td>9:00～12:00</td><td>休診</td></tr>
+          <tr><td>日・祝</td><td colspan="2">休診</td></tr>
+        </tbody>
+      </table>
+      <ul style="margin-top:10px;font-size:.9em;">
+        <li>※受付は診察終了30分前まで</li>
+        <li>※急患対応は随時承ります</li>
+      </ul>
+    </section>
+
+    <section id="access">
+      <h2>アクセス</h2>
+      <h3>電車・バス</h3>
+      <ul>
+        <li>〒252-0804 神奈川県藤沢市湘南台7-15-14</li>
+        <li>電車：「湘南台駅」東口(H) 徒歩約5分</li>
+        <li>バス：江ノ電バス「国際村入口」下車すぐ</li>
+      </ul>
+      <h3>車</h3>
+      <ul>
+        <li>駐車場無料：4台＋6台(第二駐車場)</li>
+      </ul>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps?q=明石医院+湘南台&output=embed" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-info">
+        <h2>お問い合わせ・対応時間</h2>
+        <p class="tel"><strong>電話／FAX：</strong><a href="tel:0466431123">0466-43-1123</a></p>
+        <p><strong>メール：</strong><a href="mailto:akashimc48@gmail.com">akashimc48@gmail.com</a></p>
+        <p>
+          <strong>対応時間：</strong><br>
+          月〜金：9:00～19:00<br>
+          土曜日：9:00～12:00<br>
+          <span style="color:#e74c3c;">日祝・土曜午後休診</span>
+        </p>
+      </div>
+    </section>
   </div>
 
   <footer>
