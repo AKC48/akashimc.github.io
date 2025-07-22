@@ -48,12 +48,13 @@
     .subtitle {
       margin-top: 12px;
       font-size: 15px;
-      max-width: 300px;
+      max-width: 320px;
       margin-left: auto;
       margin-right: auto;
       color: #eef5fc;
       line-height: 1.5;
       word-break: break-word;
+      white-space: normal;
     }
     .container {
       max-width: 960px; margin: 0 auto; padding: 20px;
@@ -154,6 +155,33 @@
       padding: 20px;
       font-size: 0.85em;
     }
+    /* 丸の大きさを統一：ulの先頭記号を大きく、.features-listにも反映 */
+    ul, .features-list {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+    /* pの先頭黒丸（・）調整: liと同じに見えるようにfont-size等を調整 */
+    .features-list {
+      font-size: 1em;
+      margin: 0 0 1em 0;
+      padding: 0;
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+    .features-list-item {
+      display: list-item;
+      list-style-type: disc;
+      list-style-position: inside;
+      padding-left: 0.6em;
+    }
+    /* サブタイトル2行調整 */
+    @media (min-width: 800px) {
+      .subtitle {
+        max-width: 330px;
+        font-size: 1.1em;
+        white-space: normal;
+      }
+    }
     @media (max-width: 600px) {
       .subtitle {
         font-size: 13px;
@@ -178,11 +206,11 @@
   </div>
   <div class="header-main">
     <h1>明石医院</h1>
-    <!-- ロゴサイズは80pxのまま（希望により75にも調整可能） -->
     <img src="image (3).webp" class="header-logo" alt="明石医院ロゴ" loading="lazy" />
   </div>
   <p class="subtitle">
-    藤沢市湘南台に40年、信頼の2世代ワンストップ体制<br>お子さまからご高齢の方まで、笑顔でサポートします
+    藤沢市湘南台に40年、信頼の2世代ワンストップ体制<br>
+    お子さまからご高齢の方まで、笑顔でサポートします
   </p>
 </header>
 <div class="container">
@@ -204,12 +232,12 @@
   </div>
   <section id="features">
     <h2>当院の特徴</h2>
-    <p>・外科・内科、心臓血管外科を中心に幅広く診察。</p>
-    <ul>
-      <li>地域密着の<strong>信頼と歴史</strong></li>
-      <li>最新医療技術を取り入れた<strong>2世代体制</strong></li>
-      <li>ワンストップで診療からお薬までサポート</li>
-      <li><strong>事故・労災・感染症対応</strong></li>
+    <ul class="features-list">
+      <li class="features-list-item">外科・内科、心臓血管外科を中心に幅広く診察。</li>
+      <li class="features-list-item">地域密着の<strong>信頼と歴史</strong></li>
+      <li class="features-list-item">最新医療技術を取り入れた<strong>2世代体制</strong></li>
+      <li class="features-list-item">ワンストップで診療からお薬までサポート</li>
+      <li class="features-list-item"><strong>事故・労災・感染症対応</strong></li>
     </ul>
   </section>
   <section id="dx">
