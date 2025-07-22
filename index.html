@@ -48,16 +48,16 @@
     .subtitle {
       margin-top: 12px;
       font-size: 15px;
-      max-width: 260px;
+      max-width: 250px;
       margin-left: auto; margin-right: auto;
       color: #eef5fc;
-      line-height: 1.4;
+      line-height: 1.35;
       letter-spacing: -0.02em;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      white-space: normal;
+      white-space: initial;
     }
     .container {
       max-width: 960px; margin: 0 auto; padding: 20px;
@@ -83,6 +83,16 @@
       margin-top: 4px;
       font-size: 0.75em;
       opacity: 0.8;
+    }
+    .photo-row {
+      display: flex; justify-content: center; flex-wrap: wrap;
+      gap: 32px; margin: 28px 0 0;
+    }
+    .photo-item img {
+      width: 140px; height: 140px;
+      object-fit: cover; border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      filter: brightness(1.2);
     }
     section { padding: 40px 0; border-top: 1px solid #ddd; }
     h2 {
@@ -128,6 +138,9 @@
       .header-logo {
         width: 60px; height: 60px;
       }
+      .photo-item img {
+        width: 110px; height: 110px;
+      }
     }
   </style>
 </head>
@@ -152,9 +165,18 @@
       <a class="nav-button" href="#features">当院の特徴</a>
       <a class="nav-button" href="#access">アクセス</a>
       <a class="nav-button contact" href="#contact">📞 お問い合わせ</a>
-      <a class="nav-button" href="https://patient.digikar-smart.jp/institutions/.../reserve?hl=ja" target="_blank">
+      <a class="nav-button" href="https://patient.digikar-smart.jp/institutions/88d075d5-95ea-4a91-9e20-0c7435d8bfa6/reserve?hl=ja" target="_blank">
         ご予約はこちら<br><span class="btn-note">※現金のみ</span>
       </a>
+    </div>
+
+    <div class="photo-row">
+      <div class="photo-item">
+        <img src="23BA44BA-A133-40EF-BD70-B67D32AFD54C.webp" alt="外観" loading="lazy" />
+      </div>
+      <div class="photo-item">
+        <img src="99C0BB78-9B50-4A79-BF9F-BBFF2DE82B23.webp" alt="院長・院長補佐" loading="lazy" />
+      </div>
     </div>
 
     <section id="features">
