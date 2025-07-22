@@ -30,20 +30,15 @@
     }
     .header-main {
       margin-top: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       gap: 10px;
     }
     h1 {
-      margin: 0;
-      font-size: 2.6em;
-      color: #fff;
-      letter-spacing: 0.06em;
+      margin: 0; font-size: 2.6em;
+      color: #fff; letter-spacing: 0.06em;
     }
     .header-logo {
-      width: 80px;
-      height: 80px;
+      width: 80px; height: 80px;
       border-radius: 50%;
       padding: 2px;
       background: #000;
@@ -51,10 +46,14 @@
     }
     .subtitle {
       margin-top: 12px;
-      font-size: 0.95em;
+      font-size: 16px;
       color: #eef5fc;
-      white-space: normal;
+      max-width: 360px;
+      margin-left: auto;
+      margin-right: auto;
       line-height: 1.5;
+      white-space: normal;
+      word-break: break-word;
     }
     .container {
       max-width: 960px; margin: 0 auto; padding: 20px;
@@ -156,6 +155,10 @@
       font-size: 0.85em;
     }
     @media (max-width: 600px) {
+      .subtitle {
+        font-size: 14px;
+        max-width: 90%;
+      }
       .header-logo {
         width: 70px;
         height: 70px;
@@ -236,45 +239,3 @@
     <ul style="margin-top:10px;font-size:.9em;">
       <li>※受付は診察終了30分前まで</li>
       <li>※急患対応は随時承ります</li>
-    </ul>
-  </section>
-
-  <section id="access">
-    <h2>アクセス</h2>
-    <h3>電車・バス</h3>
-    <ul>
-      <li>〒252-0804 神奈川県藤沢市湘南台7-15-14</li>
-      <li>電車：「湘南台駅」東口(Ｈ) 徒歩約5分</li>
-      <li>バス：江ノ電バス「国際村入口」下車すぐ</li>
-    </ul>
-    <h3>車</h3>
-    <ul>
-      <li>駐車場無料：4台＋6台(第二駐車場)</li>
-    </ul>
-
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps?q=明石医院+湘南台&output=embed" allowfullscreen loading="lazy"></iframe>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="contact-info">
-      <h2>お問い合わせ・対応時間</h2>
-      <p class="tel"><strong>電話／FAX：</strong><a href="tel:0466431123">0466-43-1123</a></p>
-      <p><strong>メール：</strong><a href="mailto:akashimc48@gmail.com">akashimc48@gmail.com</a></p>
-      <p>
-        <strong>対応時間：</strong><br>
-        月〜金：9:00～19:00<br>
-        土曜日：9:00～12:00<br>
-        <span style="color:#e74c3c;">日祝・土曜午後休診</span>
-      </p>
-    </div>
-  </section>
-</div>
-
-<footer>
-  ©2025 明石医院 All Rights Reserved.
-</footer>
-
-</body>
-</html>
