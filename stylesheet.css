@@ -12,13 +12,14 @@
     margin-top: 0;
     width: 100%;
   }
-  .location, .director {
-    font-size: 1em;
-    margin: 3px 0;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-  }
+.location, .director {
+  font-size: 1em;
+  margin: 3px 0;
+  text-align: center;
+  width: auto; /* ←これが重要 */
+  box-sizing: border-box;
+  padding: 4px 10px;
+}
   .header-main {
     flex-direction: column;
     gap: 6px;
