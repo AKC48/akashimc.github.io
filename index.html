@@ -10,49 +10,75 @@
       margin: 0; padding: 0;
       color: #333; background: #fff; line-height: 1.6;
     }
-    /* （以下省略せずCSS全体、前回修正したロゴ70px/60px、写真150px/140px など含む） */
-  </style>
-</head>
-<body>
-
-<header>
-  <div class="header-bar">
-    <span class="location">湘南台公園裏</span>
-    <span class="director">院長：明石勝禎</span>
-  </div>
-  <div class="header-main">
-    <h1>明石医院</h1>
-    <img src="logo.webp" class="header-logo" alt="明石医院ロゴ" loading="lazy" />
-  </div>
-  <p class="subtitle">
-    <strong>藤沢市湘南台に40年、信頼の2世代ワンストップ体制</strong><br>
-    お子さまからご高齢の方まで、笑顔でサポートします
-  </p>
-</header>
-
-<div class="container">
-  <!-- ナビボタンなど -->
-  <!-- 外観・スタッフ写真 -->
-  <!-- 特徴・診療時間・アクセスなど -->
-  
-  <section id="contact">
-    <div class="contact-info">
-      <h2>お問い合わせ・対応時間</h2>
-      <p class="tel"><strong>電話／FAX：</strong><a href="tel:0466431123">0466-43-1123</a></p>
-      <p><strong>メール：</strong><a href="mailto:akashimc48@gmail.com">akashimc48@gmail.com</a></p>
-      <p>
-        <strong>対応時間：</strong><br>
-        月〜金：9:00～19:00<br>
-        土曜：9:00～12:00<br>
-        <span style="color:#e74c3c;">日祝・土曜午後休診</span>
-      </p>
-    </div>
-  </section>
-</div>
-
-<footer>
-  ©2025 明石医院 All Rights Reserved.
-</footer>
-
-</body>
-</html>
+    header {
+      background: #0066cc; color: #fff;
+      text-align: center;
+      position: relative;
+      padding: 50px 16px 32px;
+    }
+    .header-bar {
+      display: flex; justify-content: center; gap: 12px;
+      position: absolute; top: 14px; left: 0; right: 0;
+      max-width: 960px; margin: auto; pointer-events: none;
+    }
+    .location, .director {
+      background: rgba(255,255,255,0.8);
+      padding: 4px 12px; font-size: 0.85em;
+      border-radius: 12px;
+      color: #0066cc; font-weight: bold;
+      pointer-events: auto; white-space: nowrap;
+    }
+    .header-main {
+      margin-top: 8px;
+      display: flex; align-items: center; justify-content: center;
+      gap: 10px;
+    }
+    h1 {
+      margin: 0; font-size: 2.6em;
+      color: #fff; letter-spacing: 0.06em;
+    }
+    .header-logo {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      padding: 2px;
+      background: #000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    }
+    .subtitle {
+      margin-top: 12px;
+      font-size: 0.95em;
+      color: #eef5fc;
+    }
+    .container {
+      max-width: 960px; margin: 0 auto; padding: 20px;
+    }
+    .nav-buttons {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 16px; margin: 36px 0 12px;
+    }
+    .nav-button {
+      flex: 0 1 200px;
+      padding: 12px 0;
+      background: #0066cc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 1em;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .nav-button .btn-note {
+      display: block;
+      margin-top: 4px;
+      font-size: 0.75em;
+      opacity: 0.8;
+    }
+    .photo-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 32px;
+      margin: 28px 0 0;
+    }
+    .photo-item img
