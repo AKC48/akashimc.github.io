@@ -183,6 +183,12 @@
       font-weight: bold;
       margin-bottom: 8px;
     }
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85em;
+    }
     @media (max-width: 600px) {
       header { padding: 40px 16px 32px; }
       .header-main { gap: 12px; }
@@ -192,28 +198,6 @@
       }
       .section-lead { font-size: 1.05em; }
       .address-display { font-size: 1em; }
-      /* 特徴一行のliをスマホで改行させない */
-      .features-main { 
-        font-size: 1.05em !important; 
-        font-weight: bold; 
-        white-space: nowrap; 
-        overflow: hidden; 
-        text-overflow: ellipsis; 
-      }
-    }
-    /* PCもスマホも絶対1行で */
-    .features-main {
-      font-weight: bold;
-      font-size: 1.3em;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    footer {
-      background: #f4f4f4;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.85em;
     }
   </style>
 </head>
@@ -256,8 +240,8 @@
     <section id="features">
       <h2>当院の特徴</h2>
       <ul style="margin-top: -12px;">
-        <li class="features-main">
-          外科・内科、心臓血管外科中心に他幅広く
+        <li style="font-weight:bold; font-size:1.3em;">
+          一般外科・内科、心臓血管外科を中心に幅広く
         </li>
       </ul>
       <ul>
