@@ -183,11 +183,13 @@
       font-weight: bold;
       margin-bottom: 8px;
     }
-    footer {
-      background: #f4f4f4;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.85em;
+    /* 特徴1行表示を強制 */
+    .features-main {
+      font-weight: bold;
+      font-size: 1.3em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     @media (max-width: 600px) {
       header { padding: 40px 16px 32px; }
@@ -198,6 +200,13 @@
       }
       .section-lead { font-size: 1.05em; }
       .address-display { font-size: 1em; }
+      .features-main { font-size: 1.05em !important; }
+    }
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85em;
     }
   </style>
 </head>
@@ -240,8 +249,8 @@
     <section id="features">
       <h2>当院の特徴</h2>
       <ul style="margin-top: -12px;">
-        <li style="font-weight:bold; font-size:1.3em;">
-          一般外科・内科、心臓血管外科を中心に幅広く
+        <li class="features-main">
+          外科・内科・心臓血管外科中心に他幅広く
         </li>
       </ul>
       <ul>
@@ -281,7 +290,7 @@
     <section id="access">
       <h2>アクセス</h2>
       <div class="address-display">〒252-0804 神奈川県藤沢市湘南台7-15-14</div>
-      <h3>公共交通機関</h3>
+      <h3>電車・バス</h3>
       <ul>
         <li>小田急・相鉄・横浜市営「湘南台駅」東口(H) 徒歩約5分</li>
         <li>神奈中バス「今田上原」下車すぐ</li>
