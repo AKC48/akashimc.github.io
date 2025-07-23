@@ -72,12 +72,6 @@
       width: 100%;
       padding: 20px;
     }
-    .section-lead {
-      font-size: 1.3em;
-      font-weight: bold;
-      margin-top: 24px;
-      margin-bottom: 12px;
-    }
     .nav-buttons {
       display: flex;
       flex-wrap: wrap;
@@ -191,12 +185,13 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    /* 医療DX推進体制の3項目を1行で表示 */
-    #dx ul {
+    /* DX推進体制の各行は必ず1行に（スマホでも） */
+    .dx-line {
+      font-size: 1em;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      padding-left: 1.2em;
+      margin-bottom: 8px;
     }
     @media (max-width: 600px) {
       header { padding: 40px 16px 32px; }
@@ -208,9 +203,7 @@
       .section-lead { font-size: 1.05em; }
       .address-display { font-size: 1em; }
       .features-main { font-size: 1.05em !important; }
-      #dx ul {
-        font-size: 0.9em;
-      }
+      .dx-line { font-size: 0.9em !important; }
     }
     footer {
       background: #f4f4f4;
@@ -273,10 +266,10 @@
 
     <section id="dx">
       <h2>当院の医療DX推進体制</h2>
-      <ul>
-        <li>マイナンバーカードを活用したオンライン資格確認を導入／薬剤・受診歴・健診情報等を電子的に取得し診療に活用／電子処方箋発行・電子カルテ情報共有サービスを準備中</li>
-      </ul>
-      <p>これらの取り組みを通じ、またAIを活用することにより安全かつ高品質な医療を提供します。</p>
+      <p class="dx-line">マイナンバーカードを活用したオンライン資格確認を導入</p>
+      <p class="dx-line">薬剤・受診歴・健診情報等を電子的に取得し診療に活用</p>
+      <p class="dx-line">電子処方箋発行・電子カルテ情報共有サービスを準備中</p>
+      <p class="dx-line">これらの取り組みを通じ、またAIを活用することにより安全かつ高品質な医療を提供します</p>
     </section>
 
     <section id="schedule">
@@ -305,3 +298,30 @@
       </ul>
       <h3>車</h3>
       <ul>
+        <li>駐車場無料：4台＋6台(第二駐車場)</li>
+      </ul>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps?q=明石医院+湘南台&output=embed" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-info">
+        <h2>お問い合わせ・対応時間</h2>
+        <p class="tel"><strong>電話／FAX：</strong><a href="tel:0466431123">0466-43-1123</a></p>
+        <p><strong>メール：</strong><a href="mailto:akashimc48@gmail.com">akashimc48@gmail.com</a></p>
+        <p>
+          <strong>対応時間：</strong><br>
+          月〜金：9:00～19:00<br>
+          土曜日：9:00～12:00<br>
+          <span style="color:#e74c3c;">日祝・土曜午後休診</span>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    ©2025 明石医院 All Rights Reserved.
+  </footer>
+</body>
+</html>
