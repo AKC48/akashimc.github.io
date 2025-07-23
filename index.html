@@ -183,13 +183,20 @@
       font-weight: bold;
       margin-bottom: 8px;
     }
-    /* 特徴1行表示を強制 */
+    /* 特徴文の一行表示 */
     .features-main {
       font-weight: bold;
       font-size: 1.3em;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+    /* 医療DX推進体制の3項目を1行で表示 */
+    #dx ul {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-left: 1.2em;
     }
     @media (max-width: 600px) {
       header { padding: 40px 16px 32px; }
@@ -201,6 +208,9 @@
       .section-lead { font-size: 1.05em; }
       .address-display { font-size: 1em; }
       .features-main { font-size: 1.05em !important; }
+      #dx ul {
+        font-size: 0.9em;
+      }
     }
     footer {
       background: #f4f4f4;
@@ -264,9 +274,7 @@
     <section id="dx">
       <h2>当院の医療DX推進体制</h2>
       <ul>
-        <li>マイナンバーカードを活用したオンライン資格確認を導入</li>
-        <li>薬剤・受診歴・健診情報等を電子的に取得し診療に活用</li>
-        <li>電子処方箋発行・電子カルテ情報共有サービスを準備中</li>
+        <li>マイナンバーカードを活用したオンライン資格確認を導入／薬剤・受診歴・健診情報等を電子的に取得し診療に活用／電子処方箋発行・電子カルテ情報共有サービスを準備中</li>
       </ul>
       <p>これらの取り組みを通じ、またAIを活用することにより安全かつ高品質な医療を提供します。</p>
     </section>
