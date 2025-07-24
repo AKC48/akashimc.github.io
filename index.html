@@ -191,16 +191,21 @@
       text-overflow: ellipsis;
       margin-bottom: 8px;
     }
+    .access-main {
+      font-size: 0.97em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
     @media (max-width: 600px) {
       header { padding: 40px 16px 32px; }
       .header-main { gap: 12px; }
       .header-logo { width: 60px; height: 60px; }
-      .subtitle {
-        font-size: 13px;
-      }
+      .subtitle { font-size: 13px; }
       .address-display { font-size: 1em; }
       .features-main { font-size: 1.05em !important; }
       .dx-line { font-size: 0.9em !important; }
+      .access-main { font-size: 0.81em !important; }
     }
     footer {
       background: #f4f4f4;
@@ -290,8 +295,8 @@
       <div class="address-display">〒252-0804 神奈川県藤沢市湘南台7-15-14</div>
       <h3>電車・バス</h3>
       <ul>
-        <li>小田急/相鉄/横浜市営「湘南台駅」東H口 徒歩5分</li>
-        <li>神奈中バス「今田上原」下車すぐ</li>
+        <li class="access-main">小田急/相鉄/横浜市営「湘南台駅」東口 H 徒歩5分</li>
+        <li class="access-main">神奈中バス「今田上原」下車すぐ</li>
       </ul>
       <h3>車</h3>
       <ul>
